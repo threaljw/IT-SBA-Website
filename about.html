@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Paul's Health Awareness</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(to right,rgb(4, 45, 248), #0073e6);
+            color: white;
+            text-align: center;
+            animation: fadeIn 1.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        header {
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .logo {
+            width: 150px;
+            margin-bottom: 10px;
+        }
+        nav {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 15px;
+            backdrop-filter: blur(5px);
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: #ffcc00;
+        }
+        .container {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(5px);
+            border-radius: 10px;
+            display: inline-block;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+        .section {
+            margin-top: 30px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+        .section:hover {
+            transform: scale(1.05);
+        }
+        .section img {
+            width: 30%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+        footer {
+            margin-top: 20px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/Health Awareness Logo.png" alt="Health Awareness Logo" class="logo">
+        <h1>About Paul's Health Awareness</h1>
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+    <div class="container">
+        <h2>Our Mission</h2>
+        <p>Paul's Health Awareness is dedicated to educating people about major illnesses, their symptoms, and treatment options.</p>
+        
+        <h2>Diseases We Cover</h2>
+        <ul>
+            <li><a href="#hiv">HIV/AIDS</a></li>
+            <li><a href="#hypertension">Hypertension</a></li>
+            <li><a href="#diabetes">Diabetes</a></li>
+            <li><a href="#cancer">Cancer</a></li>
+        </ul>
+
+        <div id="hiv" class="section">
+            <h3>HIV/AIDS</h3>
+            <img src="images/hiv.png" alt="HIV/AIDS Awareness">
+            <p><strong>Symptoms:</strong> Flu-like symptoms, rapid weight loss, swollen lymph nodes.</p>
+            <p><strong>Treatment:</strong> Antiretroviral therapy (ART) to manage the virus.</p>
+        </div>
+
+        <div id="hypertension" class="section">
+            <h3>Hypertension</h3>
+            <img src="images/Hypertension Awareness.jpeg" alt="Hypertension Awareness">
+            <p><strong>Symptoms:</strong> Severe headaches, dizziness, chest pain.</p>
+            <p><strong>Treatment:</strong> Medication, low-sodium diet, regular exercise.</p>
+        </div>
+
+        <div id="diabetes" class="section">
+            <h3>Diabetes</h3>
+            <img src="images/Diabetes Awareness.png" alt="Diabetes Awareness">
+            <p><strong>Symptoms:</strong> Increased thirst, frequent urination, fatigue.</p>
+            <p><strong>Treatment:</strong> Insulin therapy, healthy eating, exercise.</p>
+        </div>
+
+        <div id="cancer" class="section">
+            <h3>Cancer</h3>
+            <img src="images/Cancer Awareness.jpeg" alt="Cancer Awareness">
+            <p><strong>Symptoms:</strong> Unexplained weight loss, lumps, persistent pain.</p>
+            <p><strong>Treatment:</strong> Chemotherapy, radiation therapy, surgery.</p>
+        </div>
+    </div>
+    <footer>
+        &copy; 2025 Paul's Health Awareness. All Rights Reserved.
+    </footer>
+</body>
+</html>
